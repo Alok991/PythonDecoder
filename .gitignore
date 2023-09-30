@@ -1,0 +1,54 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.py[cod]
+
+# Virtual environment (if you're using venv or virtualenv)
+venv/
+env/
+*.pyc
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Environment-specific files (e.g., .env, .env.local, .env.*.local)
+.env*
+
+# Jupyter Notebook auto-generated files
+.ipynb_checkpoints/
+
+# Visual Studio Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Compiled Python files
+*.pyo
+*.pyd
+
+# Python packaging files
+*.egg-info/
+dist/
+build/
+
+# Ignore the output directory of Sphinx documentation generator
+_build/
+
+# Ignore the Pipfile.lock (if using Pipenv)
+Pipfile.lock
+
+# Ignore the poetry.lock (if using Poetry)
+poetry.lock
+
+# Ignore the cache directory for pip
+pip-cache/
+
+# Ignore Jupyter Notebook checkpoints
+.jupyter_checkpoints/
+
+# Ignore pytest cache
+.pytest_cache/
