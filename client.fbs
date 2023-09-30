@@ -1,0 +1,33 @@
+namespace fb;
+
+enum Gender: uint8 {
+    Male,
+    Female
+}
+
+table Person {
+    name: string;   // Assuming it's unique
+    age: float32;       // In years
+    weight: float32;  // In kg
+    gender: Gender; // Either male or female
+}
+
+
+table Group {
+    group_name: string;            // Group name
+    average_age: float32;            // Average age
+    average_weight: float32;         // Average weight
+    names_list: [string];          // List of names
+}
+
+//  it must always be part of a table, it cannot be the root of a FlatBuffer by itself.
+union ClientType {
+    Person,
+    Group
+}
+
+table Client {
+    client_type: ClientType;
+}
+
+root_type Client; // Specifies that 'Client' is the root type
